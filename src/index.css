@@ -15,15 +15,30 @@ body {
   position: fixed;
   top: 0px;
   overflow: hidden;
+  
+  
+}
+
+.Navbar > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.Navbar > ul > li {
+  border-right: 1px solid #c5c5c5;
+  display: inline-block;
 }
 
 .Nav-link {
-  float: left;
-  display: block;
+  width: 25%;
   color: rgb(242, 242, 242);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  background: rgb(63, 94, 92);
+
 }
 
 .Nav-link:hover {
@@ -35,9 +50,6 @@ body {
   animation: flicker 1.5s infinite alternate;   
  
 }
-
-
-
 
 .hrCol {
   width: 100%
@@ -127,6 +139,39 @@ img {
       0 0 151px #0fa;
 }
 
+.neonText2 {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 24px rgb(49, 91, 184),
+      0 0 30px rgb(49, 91, 184),
+      0 0 42px rgb(49, 91, 184),
+      0 0 60px rgb(49, 91, 184),
+      0 0 82px rgb(49, 91, 184),
+      0 0 92px rgb(49, 91, 184),
+      0 0 102px rgb(49, 91, 184),
+      0 0 151px rgb(49, 91, 184);
+}
+
+.neonText3 {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 24px rgb(190, 37, 32),
+      0 0 30px rgb(190, 37, 32),
+      0 0 42px rgb(190, 37, 32),
+      0 0 60px rgb(190, 37, 32),
+      0 0 82px rgb(190, 37, 32),
+      0 0 92px rgb(190, 37, 32),
+      0 0 102px rgb(190, 37, 32),
+      0 0 151px rgb(190, 37, 32);
+}
+
+
 .footer {
   height: 50px;
   margin-top: -50px;
@@ -196,4 +241,83 @@ p {
 
 .hidden {
   visibility: hidden;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+}
+
+td > img {
+  width: auto;
+  height: 200px;
+}
+
+table, th, td {
+  border: 1px solid white;
+  width: 100%
+}
+
+td, li, .text1 {
+  text-align: center;
+  padding: 15px;
+}
+
+.list1 {
+  width: 80%;
+}
+
+.buttonfx {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding-bottom: 15px;
+  justify-content: center;
+}
+
+.rainbow {
+
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 350% 350%;
+  -webkit-animation: rainbow 7s ease infinite;
+  -z-animation: rainbow 7s ease infinite;
+  -o-animation: rainbow 7s ease infinite;
+  animation: rainbow 7s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+
+.pageName {padding-top: 50px;}
+
+.helloContainer {
+  text-align: center;
+}
+
+.formout {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
 }
